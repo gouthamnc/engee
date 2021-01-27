@@ -1,0 +1,14 @@
+<div class="input-group mb-3">
+  <span class="input-group-text">@</span>
+  <input type="text" class="form-control" placeholder="Search Title" aria-label="Search" [(ngModel)]="service.searchText" (change)="service.getList()">
+</div>
+<div class="movies-list">
+  <div class="movies-list__movie shadow-sm" *ngFor="let movie of service.moviesList">
+    <img [src]="movie.Poster">
+    <div class="p-2">
+      <h4>{{movie.Title}}</h4>
+      <div>Year: {{movie.Year}}</div>
+      <div>Type: {{movie.Type}}</div>
+    </div>
+  </div>
+</div>

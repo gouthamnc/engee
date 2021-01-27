@@ -1,0 +1,36 @@
+@import "../styles";
+
+header {
+  background-color: $primary-color;
+  //padding: 1rem;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu {
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+
+  h1 {
+    color: white;
+    margin: 0;
+  }
+}
+
+main {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+}

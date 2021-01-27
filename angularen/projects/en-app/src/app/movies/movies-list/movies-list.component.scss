@@ -1,0 +1,16 @@
+.movies-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 1rem;
+
+  .movies-list__movie {
+    border: 1px solid lightgrey;
+    //.card;
+    display: flex;
+
+    img {
+      width: 180px;
+    }
+
+  }
+}

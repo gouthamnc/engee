@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #860a27;
+
+body {
+  padding: 0;
+  background-color: #f4f5f3;
+}
+
+@import "~bootstrap/scss/bootstrap";

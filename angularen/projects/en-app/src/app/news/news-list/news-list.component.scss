@@ -1,0 +1,47 @@
+.nav-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+
+  li {
+    padding: 1rem;
+  }
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  img {
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+
+  div {
+    align-self: normal;
+    margin-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h4 {
+      margin: 0;
+    }
+
+    .news-item--timestamp {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: grey;
+      margin-top: auto;
+    }
+  }
+}

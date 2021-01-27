@@ -1,0 +1,19 @@
+<ul class="nav-bar">
+  <li>
+    <a (click)="service.setType('headlines'); searchText=''">Headlines</a>
+  </li>
+  <li>
+    <a (click)="service.setType('all'); searchText=''">All</a>
+  </li>
+</ul>
+<div class="search-bar">
+  <input type="text" class="form-control" [(ngModel)]="searchText" placeholder="Search news" (change)="getNews()">
+</div>
+<div class="news-item shadow-sm p-2" *ngFor="let newsItem of service.news">
+  <img [src]="newsItem.urlToImage">
+  <div>
+    <h4>{{newsItem.title}}</h4>
+    <p>{{newsItem.description}}</p>
+    <span class="news-item--timestamp">{{newsItem.publishedAt | date: 'MMM dd, YYYY hh:mm a'}}</span>
+  </div>
+</div>
